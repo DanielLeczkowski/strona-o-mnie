@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.header{
+  background-image: url("../background/backgroundheader.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.omnie{
+  background-image: url("../background/background1.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.prace{
+  background-image: url("../background/background2.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.pasje{
+  background-image: url("../background/background3.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.inspiracje{
+  background-image: url("../background/background4.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.footer{
+  background-image: url("../background/backgroundfooter.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+}
