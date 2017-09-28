@@ -2,56 +2,16 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body{
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+.container{
+    min-height: 100%;
 }
 
-.header{
-  background-image: url("../background/backgroundheader.jpg");
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-size: 100% 100%;
-}
-
-.omnie{
-  background-image: url("../background/background1.jpg");
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-size: 100% 100%;
-}
-
-.prace{
-  background-image: url("../background/background2.jpg");
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-size: 100% 100%;
-}
-
-.pasje{
-  background-image: url("../background/background3.jpg");
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-size: 100% 100%;
-}
-
-.inspiracje{
-  background-image: url("../background/background4.jpg");
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-size: 100% 100%;
-}
-
-.footer{
-  background-image: url("../background/backgroundfooter.jpg");
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-size: 100% 100%;
-}

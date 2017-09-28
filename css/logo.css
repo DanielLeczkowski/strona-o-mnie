@@ -1,0 +1,15 @@
+#logo{
+    
+
+left: 0;
+right: 0;
+margin: 0 auto;
+z-index: -100;
+
+
+}
+.svgBrand{
+    margin-top: 70px;
+    position: relative;
+}
+
