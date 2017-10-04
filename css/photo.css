@@ -1,0 +1,23 @@
+.daniel{
+    width: 30%;
+    float: left;
+    padding: 32px;
+    opacity: .90;
+}
+@media (max-width: 768px) {
+    .daniel{
+    width: 50%;
+    float: left;
+    padding: 32px;
+    opacity: .90;
+    }
+}
+
+@media (max-width: 420px) {
+    .daniel{
+    width: 75%;
+    float: left;
+    padding: 32px;
+    opacity: .90;
+    }
+}

@@ -1,8 +1,4 @@
-body {
-  
-  font-family: 'cabin', sans-serif;
-  
-}
+
 .centered {
   text-align: center;
   font-size: 1.5em;
@@ -17,7 +13,7 @@ body {
   
   padding: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -25,27 +21,65 @@ body {
   transition: all 0.3s;
   overflow-y: hidden;
 }
-.container.menu-open {
-  position: relative;
-  /*right:230px;*/
-  -webkit-transform: translate(-250px, 0);
-  -moz-transform: translate(-250px, 0);
-  -ms-transform: translate(-250px, 0);
-  -o-transform: translate(-250px, 0);
-  transform: translate(-250px, 0);
-  /*      .animation( open 0.6s linear once); */
-  overflow-y: visible;
-}
+
 .container #nav {
   height: 50px;
-  text-align: right;
+  text-align: center;
   margin: 0;
   padding: 25px 0 0;
   float: right;
   width: 500px;
-  text-align: center;
+  
   z-index: 100;
 }
+  /*menu poniżej strony głownej*/
+
+.container #nav.smallwhite {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.container #nav.smallwhite li a {
+  display: block;
+  font-weight: bold;
+  color: #e9ebe8;
+  font-size: 22px;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container #nav.small {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.container #nav.smallWhiteMin li a {
+  
+  text-align: center;
+  color: #0a0809;
+}
+
+.container #nav.small li a {
+  display: block;
+  font-weight: bold;
+  color: #0a0809;
+  font-size: 22px;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .container #nav.open .bars .bar1 {
     background-color: #ff00ff;
   -webkit-transform: rotate(45deg) translate(8px, 7px);
@@ -70,18 +104,19 @@ body {
 }
 .container #nav li.bars {
   display: none;
-  position: absolute;
-  left: -55px;
-  top: 10;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 30px;
+  right: 20px;
   cursor: pointer;
-  padding: 15px 15px 10px;
 }
 .container #nav li.bars .bar1,
 .container #nav li.bars .bar2,
 .container #nav li.bars .bar3 {
   width: 25px;
   height: 2px;
-  background: #e9ebe8;
+  background: #ff00ff;
   margin-bottom: 8px;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
@@ -90,8 +125,9 @@ body {
 }
 .container #nav li a {
   display: block;
+  font-weight: bold;
   color: #e9ebe8;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 15px;
   border: 2px solid transparent;
   text-decoration: none;
@@ -151,4 +187,19 @@ body {
     border-color: transparent;
     color: #ff00ff;
   }
+  .container.menu-open {
+  position: fixed;
+  /*right:230px;*/
+  -webkit-transform: translate(-250px, 0);
+  -moz-transform: translate(-250px, 0);
+  -ms-transform: translate(-250px, 0);
+  -o-transform: translate(-250px, 0);
+  transform: translate(-250px, 0);
+  /*      .animation( open 0.6s linear once); */
+  overflow-y: visible;
+  z-index: 100;
 }
+
+   
+}
+

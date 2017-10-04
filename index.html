@@ -11,11 +11,11 @@
         <meta name="description" content="Daniel Leczkowski" />
         <meta name="keywords" content="" />    
         <link href="https://fonts.googleapis.com/css?family=Cabin&amp;subset=latin-ext" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -23,8 +23,15 @@
         <link href="css/menu.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer.css" rel="stylesheet" type="text/css"/> 
         <link href="css/background.css" rel="stylesheet" type="text/css"/>
+        <link href="css/gallery.css" rel="stylesheet" type="text/css"/>
+        <link href="css/photo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/omnie.css" rel="stylesheet" type="text/css"/>
+
+
+        
+        <script type="text/javascript" src="js/whcookies.js"></script>
         <script src="js/menu.js" type="text/javascript"></script> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
     </head>
 
     <body>
@@ -35,7 +42,7 @@
                         <li class="bars">
                         <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
                         </li>
-                        <li><a href="">HOME</a></li>
+                        <li><a href="#navigation">HOME</a></li>
                         <li><a href="#omnie">O MNIE</a></li>
                         <li><a href="#prace">MOJE PRACE</a></li>
                         <li><a href="#pasje">MOJE PASJE</a></li>
@@ -51,43 +58,122 @@
         </div>
         <div class="omnie" id="omnie">
             <div class="container">
-                
+                <img class="daniel" src="photo/daniel.jpg">
+                <p class="biography">Nazywam się Daniel Leczkowski, od kilku miesięcy swój wolny czas poświęcam programowaniu i projektowaniu stron internetowych.
+                    We wrześniu 2017 roku, ukończyłem kurs w SDA Academy, w programowaniu frontendowym. Podczas szkolenia, poznałem tajniki HTML5, CSS3, JavaScriptu i biblioteki jQuery. Oraz frameworków AngularJS i Bootstrap.
+                    Miałem też, możliwość zapoznania się z podstawami Adobe Photoshop. Bardzo zaciekawiła mnie grafika komputerowa animacje oraz obróbka zdjęć dlatego w najbliższym czasie postanowiłem udać się na kolejny kurs, pozwalający pogłębić moją wiedzę z 
+                    zakresu Adobe Photoshop oraz Illustrator.
+                    <br>
+                    <br>
+                    Przez ostatnie 10 lat zajmowałem się pracą w hotelowych cukierniach. 
+                    Mój poprzedni zawód nauczył mnie odpowiedzialności, precyzji i poczucia estetyki. Również potrzebnych w pracy Frontendowca czy Web Designera. Kontakt z klientami i poznawanie nowych osób, uważam za wspaniałe dośwaidczenie.
+                    Moje doświadczenia i upór pozwoliły w 2015 roku obronić tytuł Mistrza Cukiernictwa. Po dekadzie pracy w zawodzie, postanowiłem diametralnie zmienić swoje życie zawodowe i szukać nowej scieżki zawodowej. 
+                    W obecnej chwili poszukuję swojego pierwszego miejsca pracy w branży IT. Moim celem jest trafienie do zespołu profesionalistów pod okiem, których będę w stanie móc rozwiajć swój warszat Web Designu i Front-endu.
+                </p>
             </div>
         </div>
         <div class="prace"id="prace">
             <div class="container">
-                
+                <h2>Przez ostatnich kilka lat zajmowałem się tworzeniem (co prawda, nie były to strony internetowe :))</h2>
+                    <input type="checkbox" id="pic-1"/>
+                    <label for="pic-1" class="lightbox"><img src="photo/pic1.jpg"/></label>
+                    <input type="checkbox" id="pic-2"/>
+                    <label for="pic-2" class="lightbox"><img src="photo/pic2.jpg"/></label>
+                    <input type="checkbox" id="pic-3"/>
+                    <label for="pic-3" class="lightbox"><img src="photo/pic3.jpg"/></label>
+                    <input type="checkbox" id="pic-4"/>
+                    <label for="pic-4" class="lightbox"><img src="photo/pic4.jpg"/></label>
+                    <input type="checkbox" id="pic-5"/>
+                    <label for="pic-5" class="lightbox"><img src="photo/pic5.jpg"/></label>
+                    <input type="checkbox" id="pic-6"/>
+                    <label for="pic-6" class="lightbox"><img src="photo/pic6.jpg"/></label>
+                    <input type="checkbox" id="pic-7"/>
+                    <label for="pic-7" class="lightbox"><img src="photo/pic7.jpg"/></label>
+                    <input type="checkbox" id="pic-8"/>
+                    <label for="pic-8" class="lightbox"><img src="photo/pic8.jpg"/></label>
+                    <input type="checkbox" id="pic-9"/>
+                    <label for="pic-9" class="lightbox"><img src="photo/pic9.jpg"/></label>
+                    <input type="checkbox" id="pic-10"/>
+                    <label for="pic-10" class="lightbox"><img src="photo/pic10.jpg"/></label>
+                    <input type="checkbox" id="pic-11"/>
+                    <label for="pic-11" class="lightbox"><img src="photo/pic11.jpg"/></label>
+                    <input type="checkbox" id="pic-12"/>
+                    <label for="pic-12" class="lightbox"><img src="photo/pic12.jpg"/></label>
+                    <input type="checkbox" id="pic-13"/>
+                    <label for="pic-13" class="lightbox"><img src="photo/pic13.jpg"/></label>
+                    <input type="checkbox" id="pic-14"/>
+                    <label for="pic-14" class="lightbox"><img src="photo/pic14.jpg"/></label>
+                <div class="grid">
+                    <label for="pic-1" class="grid-item"><img src="photo/pic1.jpg"/></label>
+                    <label for="pic-2" class="grid-item"><img src="photo/pic2.jpg"/></label>
+                    <label for="pic-3" class="grid-item"><img src="photo/pic3.jpg"/></label>
+                    <label for="pic-4" class="grid-item"><img src="photo/pic4.jpg"/></label>
+                    <label for="pic-5" class="grid-item"><img src="photo/pic5.jpg"/></label>
+                    <label for="pic-6" class="grid-item"><img src="photo/pic6.jpg"/></label>
+                    <label for="pic-7" class="grid-item"><img src="photo/pic7.jpg"/></label>
+                    <label for="pic-8" class="grid-item"><img src="photo/pic8.jpg"/></label>
+                    <label for="pic-9" class="grid-item"><img src="photo/pic9.jpg"/></label>
+                    <label for="pic-10" class="grid-item"><img src="photo/pic10.jpg"/></label>
+                    <label for="pic-11" class="grid-item"><img src="photo/pic11.jpg"/></label>
+                    <label for="pic-12" class="grid-item"><img src="photo/pic12.jpg"/></label>
+                    <label for="pic-13" class="grid-item"><img src="photo/pic13.jpg"/></label>
+                    <label for="pic-14" class="grid-item"><img src="photo/pic14.jpg"/></label>
+                </div>
             </div>
         </div>
         <div class="pasje" id="pasje">
             <div class="container">
-                
+                <p class="pasion">Moją pasją, od zawsze było tworzenie. Jako osoba o bogatej wyobraźni, zawsze starałem się upiększać świat wokól siebie.
+                    Uwielbiam otaczać się ciekawymi przedmiotami, kolorami czy fakturami. Cieszę się kiedy mogę projektować wnętrza.
+                    <br>
+                    Od zawsze kocham francuske samochody. Uwielbiam ich styl, linię i wygodę. Kiedy chcę odciąć się od wszystkiego wsiadam w mój samochód i poróżuję przed siebie, słuchając ulubionej muzyki. Podróże pobudzają moją wyobraźnię.
+                    Każdy pokonany kilometr, pozwala cieszyć się pięknem natury i świata.
+                    <br>
+                    Kocham gotować dla Siebie i najbliższych. Moi znajomi wiedzą, że zawsze zaskoczę ich w kuchni czymś dobrym i nie koniecznie musi to być ciasto :)
+                    <br>
+                    "Życie jest za krótkie, żeby pić kiepskie wino" Zapach kawy i jej smak oraz dobre wina, to coś czym lubię się delektować. Lubię czuć wokól siebie dobre zapachy.
+                    <br>
+                    Jako osoba wygodna i ceniąca swój czas, lubię wykorzystywać w życiu codziennym nowoczesne technologoie i gadżety. W wolnym czasie przeczesuję internet w poszukiwaniu nowych inspiracji.
+                    W ostatnim czasie, lubię wyszukiwać ciekawe strony internetowe, żeby czerpać z nich inspiracje do pracy przy własnych stronach webowych.
+                </p>
             </div>
         </div>
         <div class="inspiracje" id="inspiracje">
             <div class="container">
-                
+                <h3>"Moda przemija, styl pozostaje"- Coco Chanell</h3>
+                <p class="pasion">
+                    Przez ostatnie dwa lata, szkoliłem personel w kawiarniach i cukierniach. Swoim kursantom zawsze starałem się przekazać tą samą myśl Coco Chanell.
+                    <br>
+                    Wyznając, że styl zawsze sam się obroni, inspiruję się na co dzień wieloma dziedzinami życia. Pomysłów szukam we wzornictwie przemysłowym współczesnym jak i z XX wieku.
+                    Ikony designu takie jak Panton Chair, Orginal 1227 lamp, Anna G. korkociąg, Egg chair, wyciskarka Philippe Starcka, to tylko nie które z przedmiotów, które pokazują jak nie wiele portrzeba żeby osiągnąć wspaniały efekt.
+                    <br>
+                    Pomimo, że jestem facetem, rozróżniam więcej niż trzy kolory. Lubię zestawiać ze sobą rózne warianty kolorystyczne, bawić się dodatkami, kształtami czy fakturami. 
+                    Przeglądając Pinterest czy Instagram szukam inspiracji.
+                    <br>
+                    Ciekawi mnie wzornictwo skandynawskie, minimalizm i surowośc jest dla mnie wyznacznikiem. Mniej, znaczy więcej.
+
+                </p>
             </div>
         </div>
         <div id="kontakt">
             <div class="container">
                 <footer class="footer">
                     <div class="footer-icons">
-                        <a href="http://www.linkedin.com/" class="fa fa-linkedin"></a>
-                        <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                        <a href="https://github.com" class="fa fa-github"></a>
-                        <a href="https://pinterest.com" class="fa fa-pinterest"></a>
-                        <a href="https://instagram.com" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/daniel-leczkowski-11ab5a14a/" class="fa fa-linkedin"></a>
+                        <a href="https://twitter.com/DanielLeczkowsk" class="fa fa-twitter"></a>
+                        <a href="https://www.facebook.com/daniel.leczkowski" class="fa fa-facebook"></a>
+                        <a href="https://github.com/DanielLeczkowski" class="fa fa-github"></a>
+                        <a href="https://pl.pinterest.com/danielleczkowsk/" class="fa fa-pinterest"></a>
+                        <a href="https://www.instagram.com/danielleczkowski/?hl=pl" class="fa fa-instagram"></a>
                     </div>
                     <div class="footer-right">
                         <div>
                             <i class="fa fa-phone"></i>
-                            <p>504 221 774</p>
+                            <p>+48 504 221 774</p>
                         </div>
                         <div>
                             <i class="fa fa-envelope"></i>
-                            <p><a href="mailto:daniel.leczkowski@wp.pl">daniel.leczkowski@wp.pl</a></p>
+                            <p><a href="mailto:kontakt@danielleczkowski.com.pl">kontakt@danielleczkowski.com.pl</a></p>
                         </div>
                     </div>
                 </footer>
